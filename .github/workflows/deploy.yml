@@ -1,0 +1,51 @@
+name: Remote Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. 拉取你的 Markdown 内容 (仓库 B)
+      - name: Checkout Content
+        uses: actions/checkout@v4
+        with:
+          path: 'content-repo'
+
+      # 2. 拉取你的 Hugo 环境 (仓库 A)
+      - name: Checkout Engine
+        uses: actions/checkout@v4
+        with:
+          repository: 'doing-1024/hugo-blog-file' # 替换为你的环境仓库名
+          path: 'hugo-engine'
+          submodules: recursive
+
+      # 3. 把内容搬运到环境的 content 文件夹中
+      - name: Merge Content into Engine
+        run: |
+          mkdir -p hugo-engine/content
+          cp -r content-repo/* hugo-engine/content/
+          # 如果你的 Action 文件也在 content-repo 里，记得排除它以免死循环
+          rm -rf hugo-engine/content/.github 
+
+      # 4. 安装 Hugo 并构建
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build
+        run: |
+          cd hugo-engine
+          hugo --minify
+
+      # 5. 部署到 GitHub Pages (默认会部署到当前的 gh-pages 分支)
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./hugo-engine/public
