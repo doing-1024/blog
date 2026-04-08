@@ -1,0 +1,11 @@
+baseURL = "https://doing1024.qzz.io/"
+languageCode = "zh-cn"
+title = "doing1024"
+theme = "papermod"
+
+[params]
+  defaultTheme = "auto"      # 跟随系统亮暗模式
+  ShowReadingTime = true     # 显示阅读时间
+  ShowToc = true             # 显示目录
+  ShowPostNavLinks = true    # 显示上一篇/下一篇
+  ShowShareButtons = false   # 关闭花哨的分享按钮
