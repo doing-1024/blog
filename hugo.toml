@@ -9,3 +9,9 @@ theme = "papermod"
   ShowToc = true             # 显示目录
   ShowPostNavLinks = true    # 显示上一篇/下一篇
   ShowShareButtons = false   # 关闭花哨的分享按钮
+[menu]
+  [[menu.main]]
+    identifier = "my-website"
+    name = "网站"     # 导航栏显示的文字
+    url = "/posts/all-my-website/"  # 对应你生成的路径（通常是文件名）
+    weight = 10      # 数字越小越靠左，越大越靠右
