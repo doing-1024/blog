@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on doing1024</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on doing1024</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 02 May 2026 16:31:01 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>洛谷注册机死亡通知书</title>
+      <link>http://localhost:1313/posts/luogu-register-die/</link>
+      <pubDate>Sat, 02 May 2026 16:31:01 +0800</pubDate>
+      <guid>http://localhost:1313/posts/luogu-register-die/</guid>
+      <description>&lt;p&gt;接前几天说的洛谷注册机，没几天就被洛谷官方给封了（听说是被举报的），技术路线未死，但是容易大小号一同株连，所以：
+**```
+不要尝试
+不要尝试
+不要尝试&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-**&#34; data-lang=&#34;**&#34;&gt;重要的事情说三遍！
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>我的所有网站</title>
+      <link>http://localhost:1313/posts/all-my-website/</link>
+      <pubDate>Sat, 02 May 2026 16:01:47 +0800</pubDate>
+      <guid>http://localhost:1313/posts/all-my-website/</guid>
+      <description>&lt;p&gt;这里是Doing的所有网站集合，整理用于自用，如果有能帮助到你，非常荣幸。&lt;/p&gt;
+&lt;h2 id=&#34;博客&#34;&gt;博客&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;简介：既然是“所有”，那么肯定要包含当前这个啦～&lt;/li&gt;
+&lt;li&gt;url: &lt;a href=&#34;https://doing1024.qzz.io&#34;&gt;https://doing1024.qzz.io&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;免费大模型&#34;&gt;免费大模型&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;简介：一点点国产模型的2api,速度不快，仅供兜底使用。&lt;/li&gt;
+&lt;li&gt;url:（没有网页，仅API） &lt;a href=&#34;https://doing1024-litellm.hf.space/v1&#34;&gt;https://doing1024-litellm.hf.space/v1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;备注： key： c2stTjU2W3JlbW92ZSB0aGlzXXc0NU9HQXBbcmVtb3ZlIHRoaXNdYktQZDJyZw== ，模型：qwen3.6-plus,&lt;code&gt;deepseek-{chat,reasoner}-{fast,expert}{,-search}&lt;/code&gt; （deepseek一共8款模型，请使用Linux shell通配符展开）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;联机五子棋&#34;&gt;联机五子棋&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;简介：一款基于partykit作为后端的联机五子棋游戏，自动配对（访问时没人配对，正常现象，不是网站坏了）&lt;/li&gt;
+&lt;li&gt;url: &lt;a href=&#34;https://doing1024duck-gomuku-static.static.hf.space/&#34;&gt;https://doing1024duck-gomuku-static.static.hf.space/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;联机画板&#34;&gt;联机画板&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;简介：同样基于partykit的联机画板，实时更新&lt;/li&gt;
+&lt;li&gt;url: &lt;a href=&#34;https://d.doing1024.qzz.io&#34;&gt;https://d.doing1024.qzz.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;备注：又名春日画板（开发时是2026/04），意味对应洛谷冬日画板（虽然完全不是一个量级）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;人机对战五子棋&#34;&gt;人机对战五子棋&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;简介：纯前端,无机器学习的人机五子棋&lt;/li&gt;
+&lt;li&gt;url: &lt;a href=&#34;https://wuziqi.doing1024.qzz.io&#34;&gt;https://wuziqi.doing1024.qzz.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;备注：开发于2024,当时水平有限，因后续未再更新，所有机器水平不高。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;在线书本思维导图生成器&#34;&gt;在线书本思维导图生成器&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;简介：输入书籍名称，自动进行&lt;code&gt;书名-(AI)-&amp;gt;Markdown-(思维导图程序)-&amp;gt;PNG&lt;/code&gt;的转化，最终导出图片，风格模仿Xmind.&lt;/li&gt;
+&lt;li&gt;url: &lt;a href=&#34;https://mind.doing1024.qzz.io&#34;&gt;https://mind.doing1024.qzz.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;备注：思维导图程序采用&lt;a href=&#34;https://github.com/jinzcdev/markxmind&#34;&gt;MarkXmind&lt;/a&gt;，并进行简单修改和封装。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ai狼人杀角斗场&#34;&gt;AI狼人杀角斗场&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;简介：纯前端程序，令AI自动进行狼人杀游戏。&lt;/li&gt;
+&lt;li&gt;url: &lt;a href=&#34;https://lrs.doing1024.qzz.io&#34;&gt;https://lrs.doing1024.qzz.io&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>洛谷注册机</title>
+      <link>http://localhost:1313/posts/luogu-register/</link>
+      <pubDate>Sat, 11 Apr 2026 18:16:16 +0800</pubDate>
+      <guid>http://localhost:1313/posts/luogu-register/</guid>
+      <description>&lt;p&gt;鉴于本文内容较为敏感，本文仅提供实现流程和与AI交互的经验，不提供具体成品和任何代码。&lt;/p&gt;
+&lt;h1 id=&#34;思路&#34;&gt;思路&lt;/h1&gt;
+&lt;p&gt;具体而言就是走洛谷的注册API，需要用户名、密码、Captcha、邮箱验证码几个信息，关键难点就在于后两项，逐一破解：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;邮箱我通过自己的域名（免费的&lt;code&gt;.qzz.io&lt;/code&gt;二级域名）+CloudFlare Worker搭建的临时邮箱API（这个有空也可以分享出来），通过程序轮询接口即可。&lt;/li&gt;
+&lt;li&gt;验证码在洛谷上有个&lt;a href=&#34;https://github.com/mayoi-Akira/CNN-captcha-recognition-for-Luogu&#34;&gt;油猴脚本&lt;/a&gt;，附带了一个Python程序，基于ResNet，项目本身有一个服务器，但是我为了防止意外又拿Huggingface部署了一份（反正是免费的）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;剩下的就是抓包提取API然后编写代码了。&lt;/p&gt;
+&lt;p&gt;还有要注意的是保存账户后不仅要保存uid和cookie,同时也要保存密码，用于在Cookie过期时刷新Cookie（毕竟你写了注册机肯定不是要自己用而是批量运行对吧）。&lt;/p&gt;
+&lt;h1 id=&#34;与ai的交互&#34;&gt;与AI的交互&lt;/h1&gt;
+&lt;p&gt;我是很希望让AI来帮我写的，但是AI由于缺少这方面的资料，写起来只能纯靠蒙，目前我总结出来的：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;找一个肯帮你干活的AI,实测国模和GPT都不行，我用的是Google AI Studio，免费的Gemini 3.1 Pro.&lt;/li&gt;
+&lt;li&gt;浏览器F12打开网络选项卡，然后手动模拟一遍注册流程，导出抓包记录为har.&lt;/li&gt;
+&lt;li&gt;把这个har（实际上就是一种JSON格式）发给AI,让它对着这个har写代码。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;经实测这样可以让AI不用瞎蒙，通常可以一遍成功。&lt;/p&gt;
+&lt;h1 id=&#34;重要声明&#34;&gt;重要声明&lt;/h1&gt;
+&lt;p&gt;本文内容纯属虚构，不包含任何实际建议和技术指导。批量注册账号是违法行为，若您执意尝试，所造成的一切后果与本文无关。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>非官方的洛谷Api文档</title>
+      <link>http://localhost:1313/posts/luogu-api-docs/</link>
+      <pubDate>Wed, 08 Apr 2026 19:15:26 +0800</pubDate>
+      <guid>http://localhost:1313/posts/luogu-api-docs/</guid>
+      <description>&lt;p&gt;这两天帮老师研究洛谷爬虫，需要爬取题解、题目标签等信息，但是尝试直接爬取网页就会发现效率慢且有的信息（比如tags）爬取不到。猜测是洛谷采用了前后端分离的方式，遂寻找API。&lt;/p&gt;
+&lt;p&gt;寻找的过程中发现Github上有一份热心网友整理的&lt;a href=&#34;https://github.com/0f-0b/luogu-api-docs/&#34;&gt;文档&lt;/a&gt;（为避免意外，我也&lt;a href=&#34;https://github.com/doing-1024/luogu-api-docs&#34;&gt;fork&lt;/a&gt;了一份），整理的非常全面，各个方面都有，同时把所有的鉴权操作都列了出来，爬虫时只需要注意控制限速即可了，后续我也会将我的代码发到这个blog。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

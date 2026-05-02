@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Luogu on doing1024</title>
+    <link>http://localhost:1313/tags/luogu/</link>
+    <description>Recent content in Luogu on doing1024</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 11 Apr 2026 18:16:16 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/luogu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>洛谷注册机</title>
+      <link>http://localhost:1313/posts/luogu-register/</link>
+      <pubDate>Sat, 11 Apr 2026 18:16:16 +0800</pubDate>
+      <guid>http://localhost:1313/posts/luogu-register/</guid>
+      <description>&lt;p&gt;鉴于本文内容较为敏感，本文仅提供实现流程和与AI交互的经验，不提供具体成品和任何代码。&lt;/p&gt;
+&lt;h1 id=&#34;思路&#34;&gt;思路&lt;/h1&gt;
+&lt;p&gt;具体而言就是走洛谷的注册API，需要用户名、密码、Captcha、邮箱验证码几个信息，关键难点就在于后两项，逐一破解：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;邮箱我通过自己的域名（免费的&lt;code&gt;.qzz.io&lt;/code&gt;二级域名）+CloudFlare Worker搭建的临时邮箱API（这个有空也可以分享出来），通过程序轮询接口即可。&lt;/li&gt;
+&lt;li&gt;验证码在洛谷上有个&lt;a href=&#34;https://github.com/mayoi-Akira/CNN-captcha-recognition-for-Luogu&#34;&gt;油猴脚本&lt;/a&gt;，附带了一个Python程序，基于ResNet，项目本身有一个服务器，但是我为了防止意外又拿Huggingface部署了一份（反正是免费的）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;剩下的就是抓包提取API然后编写代码了。&lt;/p&gt;
+&lt;p&gt;还有要注意的是保存账户后不仅要保存uid和cookie,同时也要保存密码，用于在Cookie过期时刷新Cookie（毕竟你写了注册机肯定不是要自己用而是批量运行对吧）。&lt;/p&gt;
+&lt;h1 id=&#34;与ai的交互&#34;&gt;与AI的交互&lt;/h1&gt;
+&lt;p&gt;我是很希望让AI来帮我写的，但是AI由于缺少这方面的资料，写起来只能纯靠蒙，目前我总结出来的：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;找一个肯帮你干活的AI,实测国模和GPT都不行，我用的是Google AI Studio，免费的Gemini 3.1 Pro.&lt;/li&gt;
+&lt;li&gt;浏览器F12打开网络选项卡，然后手动模拟一遍注册流程，导出抓包记录为har.&lt;/li&gt;
+&lt;li&gt;把这个har（实际上就是一种JSON格式）发给AI,让它对着这个har写代码。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;经实测这样可以让AI不用瞎蒙，通常可以一遍成功。&lt;/p&gt;
+&lt;h1 id=&#34;重要声明&#34;&gt;重要声明&lt;/h1&gt;
+&lt;p&gt;本文内容纯属虚构，不包含任何实际建议和技术指导。批量注册账号是违法行为，若您执意尝试，所造成的一切后果与本文无关。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>非官方的洛谷Api文档</title>
+      <link>http://localhost:1313/posts/luogu-api-docs/</link>
+      <pubDate>Wed, 08 Apr 2026 19:15:26 +0800</pubDate>
+      <guid>http://localhost:1313/posts/luogu-api-docs/</guid>
+      <description>&lt;p&gt;这两天帮老师研究洛谷爬虫，需要爬取题解、题目标签等信息，但是尝试直接爬取网页就会发现效率慢且有的信息（比如tags）爬取不到。猜测是洛谷采用了前后端分离的方式，遂寻找API。&lt;/p&gt;
+&lt;p&gt;寻找的过程中发现Github上有一份热心网友整理的&lt;a href=&#34;https://github.com/0f-0b/luogu-api-docs/&#34;&gt;文档&lt;/a&gt;（为避免意外，我也&lt;a href=&#34;https://github.com/doing-1024/luogu-api-docs&#34;&gt;fork&lt;/a&gt;了一份），整理的非常全面，各个方面都有，同时把所有的鉴权操作都列了出来，爬虫时只需要注意控制限速即可了，后续我也会将我的代码发到这个blog。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
